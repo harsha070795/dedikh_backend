@@ -15,6 +15,7 @@ phases:
             - echo building.....
             - npm run build
 artifacts:
+    type: zip
     files:
         - package.json
         - package-lock.json
