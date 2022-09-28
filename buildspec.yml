@@ -1,0 +1,25 @@
+version: 0.1
+
+phases:
+    install:
+        commands: 
+            - echo installing nodejs.....
+            - sudo apt-get install nodejs
+            - node -v
+    pre_build:
+        commands:
+            - echo installing dependencies.....
+            - npm install
+    build: 
+        commands:
+            - echo building.....
+            - npm run build
+artifacts:
+    files:
+        - package.json
+        - package-lock.json
+        - "build/**/*"
+    discard-paths: no
+    base-directory: build
+
+    
