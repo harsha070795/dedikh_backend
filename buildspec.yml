@@ -13,10 +13,8 @@ phases:
 artifacts:
     type: zip
     files:
-        - package.json
-        - package-lock.json
-        - "build/**/*"
-    discard-paths: no
+        - "**/*"
+    discard-paths: yes
     base-directory: build
 
     
