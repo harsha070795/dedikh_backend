@@ -11,10 +11,7 @@ phases:
         commands:
             - npm run build
 artifacts:
-    type: zip
     files:
         - "**/*"
-        - package.json
-        - package-lock.json
     discard-paths: yes
     base-directory: build
