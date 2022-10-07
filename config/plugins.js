@@ -1,9 +1,9 @@
 require("dotenv").config;
-
+const crypto = require("crypto")
 module.exports = ({ env }) => ({
   "users-permissions": {
     config: {
-      jwtSecret: process.env.JWT_SECRET,
+      jwtSecret: process.env.JWT_SECRET || crypto.randomBytes(16).toString('base64'),
     },
   },
   upload: {
