@@ -1,6 +1,11 @@
-require('dotenv').config
+require("dotenv").config;
 
 module.exports = ({ env }) => ({
+  "users-permissions": {
+    config: {
+      jwtSecret: process.env.JWT_SECRET,
+    },
+  },
   upload: {
     config: {
       provider: "aws-s3",
