@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_marketing_marketings",
+  "info": {
+    "displayName": "Marketing",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blog_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-detail.blog-detail"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_inner_inner_texts",
+  "info": {
+    "displayName": "InnerText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

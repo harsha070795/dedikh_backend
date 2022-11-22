@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_seo_shared_seos",
+  "info": {
+    "displayName": "shared.seo",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "keywords": {
+      "type": "string",
+      "regex": "[^,]+"
+    },
+    "canonicalURL": {
+      "type": "string"
+    },
+    "metaSocial": {
+      "displayName": "Social",
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.social"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_technology_technologies",
+  "info": {
+    "displayName": "Technology"
+  },
+  "options": {},
+  "attributes": {
+    "blog_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-detail.blog-detail"
+    }
+  }
+}

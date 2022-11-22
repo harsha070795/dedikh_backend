@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_seo_socials",
+  "info": {
+    "displayName": "Social",
+    "icon": "atom"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "socialNetwork": {
+      "type": "enumeration",
+      "enum": [
+        "Twitter",
+        "Facebook"
+      ],
+      "required": true,
+      "default": "Twitter"
+    }
+  }
+}

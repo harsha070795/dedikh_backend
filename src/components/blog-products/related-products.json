@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_products_related_products",
+  "info": {
+    "displayName": "blogProduct",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "blog_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-detail.blog-detail"
+    }
+  }
+}

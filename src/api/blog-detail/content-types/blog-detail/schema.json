@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_details",
+  "info": {
+    "singularName": "blog-detail",
+    "pluralName": "blog-details",
+    "displayName": "Blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogDetail": {
+      "type": "component",
+      "repeatable": true,
+      "component": "inner.inner-text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "blog_details"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.shared-seo"
+    },
+    "relatedProducts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-products.related-products"
+    },
+    "duration": {
+      "type": "string"
+    }
+  }
+}

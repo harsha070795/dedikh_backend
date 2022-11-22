@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_products_case_products",
+  "info": {
+    "displayName": "caseProduct",
+    "icon": "atom",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "case_studies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::case-studie.case-studie"
+    }
+  }
+}

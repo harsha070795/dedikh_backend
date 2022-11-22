@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "casebanners",
+  "info": {
+    "singularName": "casebanner",
+    "pluralName": "casebanners",
+    "displayName": "Case Study Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "case_studies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::case-studie.case-studie"
+    }
+  }
+}

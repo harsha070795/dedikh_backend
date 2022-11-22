@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_branding_brandings",
+  "info": {
+    "displayName": "Branding"
+  },
+  "options": {},
+  "attributes": {
+    "blog_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-detail.blog-detail"
+    }
+  }
+}

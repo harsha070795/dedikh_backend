@@ -24,4 +24,15 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  'sitemap': {
+    enabled: true,
+    config: {
+      autoGenerate: true,
+      allowedFields: ['uid'],
+      excludedTypes: [],
+    },
+  },
+  seo: {
+    enabled: true
+  }
 });

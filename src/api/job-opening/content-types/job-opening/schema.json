@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_openings",
+  "info": {
+    "singularName": "job-opening",
+    "pluralName": "job-openings",
+    "displayName": "Job Opening",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "designation": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Full-time",
+        "Part-time",
+        "Contractual"
+      ]
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "Work-From-Office",
+        "Work-From-Home"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "designation"
+    }
+  }
+}
